@@ -3,6 +3,7 @@ const avatar = require("./utility/avatar");
 const help = require("./utility/help");
 const kick = require("./moderation/kick");
 const ping = require("./ping");
+const prune = require("./moderation/prune");
 
 const commandMap = {
     [argsInfo.name]: argsInfo,
@@ -10,6 +11,7 @@ const commandMap = {
     [help.name]: help,
     [kick.name]: kick,
     [ping.name]: ping,
+    [prune.name]: prune,
 };
 
 const getAllCommandNames = () => Object.keys(commandMap);
