@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "pm2": "pm2 start index.js -n pogo-pvp-draft-bot"
   },
   "keywords": [],
   "author": "",
